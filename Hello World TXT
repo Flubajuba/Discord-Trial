@@ -1,0 +1,6 @@
+#include <iostream>
+
+int main() {
+    std::cout << "Evil-Discord Activating";
+    return 0;
+}
