@@ -9,4 +9,4 @@ jobs:
         uses: Ilshidur/action-discord@v3
         with:
           webhook: ${{ secrets.DISCORD_WEBHOOK }}
-          message: "🚀 New push by ${{ github.actor }} in **${{ github.repository }}**!"
+          message: "Boner Alarm"
