@@ -1,4 +1,4 @@
-name: Notify Discord
+name: Boner Alarm
 on: [push]
 
 jobs:
