@@ -1,6 +1,12 @@
-#include <iostream>
+name: Notify Discord
+on: [push, pull_request]
 
-int main() {
-    std::cout << "Evil-Discord Activating";
-    return 1;
-}
+jobs:
+  discord:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send message to Discord
+        uses: Ilshidur/action-discord@v3
+        with:
+          webhook: ${{ secrets.DISCORD_WEBHOOK }}
+          message: "🚀 New push by ${{ github.actor }} on **${{ github.repository }}** (`${{ github.ref }}`)"
